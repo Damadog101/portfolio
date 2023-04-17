@@ -90,3 +90,13 @@ a {
 .lightBG {
     background-color: var(--lightBG);
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+footer section {
+    width: 33%
+    background-color: var(--nav);
+
+}
