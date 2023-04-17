@@ -8,16 +8,22 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #7B8B8F;
+    background-color: var(--background);
 }
 
 :root {
     font-size: 32px;
+    --nav: #253D42;
+    --lightBG:#A7BDC2;
+    --bright:#2A9DA9;
+    --dark:#516165;
+    --bigDark:#394142;
+    --background:#7B8B8F;
 }
 
 nav, 
 nav * {
-    background-color: #253D42;
+    background-color: var(--nav);
 }
 nav {
     width: 100%;
@@ -26,7 +32,6 @@ nav {
 }
 
 nav section {
-    padding: 1%;
     width: 50%;
 }
 
@@ -46,6 +51,10 @@ nav a {
     display: block;
 }
 
+.name {
+    padding: 1%;
+}
+
 .subNav li {
     display: block;
     margin: 2px 0px;
@@ -56,7 +65,7 @@ nav a {
     display: none;
 }
 
-.navList:hover .subNav{
+li:hover .subNav{
     display: block;
 }
 
@@ -73,8 +82,11 @@ a {
     width: 100%;
 }
 .homeProjects {
-    background-color: #516165;
+    background-color: (--dark);
     width: 100%;
     height: 100vh;
 }
 
+.lightBG {
+    background-color: var(--lightBG);
+}
