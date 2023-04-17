@@ -38,10 +38,11 @@ nav ul {
 nav li {
     display: inline-block;
     position: relative;
+    padding: 2%;
+
 }
 
 nav a {
-    padding: 2%;
     display: block;
 }
 
