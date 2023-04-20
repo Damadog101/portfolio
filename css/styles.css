@@ -14,17 +14,18 @@ body {
 :root {
     font-size: 32px;
     --nav: #253D42;
-    --lightBG:#A7BDC2;
-    --bright:#2A9DA9;
-    --dark:#516165;
-    --bigDark:#394142;
-    --background:#7B8B8F;
+    --lightBG: #A7BDC2;
+    --bright: #2A9DA9;
+    --dark: #516165;
+    --bigDark: #394142;
+    --background: #7B8B8F;
 }
 
-nav, 
+nav,
 nav * {
     background-color: var(--nav);
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -47,6 +48,7 @@ nav li {
 
 }
 
+
 nav a {
     display: block;
 }
@@ -59,17 +61,18 @@ nav a {
     display: block;
     margin: 2px 0px;
 }
+
 .subNav {
     position: absolute;
     z-index: 100;
     display: none;
 }
 
-li:hover .subNav{
+li:hover .subNav {
     display: block;
 }
 
-.navlist > li {
+.navlist>li {
     width: 25%;
 }
 
@@ -82,6 +85,7 @@ a {
     height: 100vh;
     width: 100%;
 }
+
 .homeProjects {
     background-color: var(--dark);
     width: 100%;
@@ -91,6 +95,7 @@ a {
 .lightBG {
     background-color: var(--lightBG);
 }
+
 .darkBG {
     background-color: var(--dark);
 }
@@ -114,6 +119,7 @@ footer section {
     align-items: center;
     justify-content: center;
 }
+
 .aboutJumpWrapper {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +143,7 @@ footer section {
 }
 
 .awardCard {
-    aspect-ratio: 1 ;
+    aspect-ratio: 1;
     background-color: var(--lightBG);
     height: 100px;
     border: 1px solid green;
@@ -157,13 +163,13 @@ footer section {
 }
 
 .mainAwards {
-    aspect-ratio: 1 ;
+    aspect-ratio: 1;
     background-color: var(--lightBG);
     height: 300px;
-    
+
 }
 
-/* .mainAwards:hover .awardCard {
+.mainAwards:hover + .awardCard {
     transform: translate(-50%, -50%);
 
-} */
+}
