@@ -146,12 +146,7 @@ footer section {
     aspect-ratio: 1;
     background-color: var(--lightBG);
     height: 100px;
-    border: 1px solid green;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-
 }
 
 .awards {
@@ -166,10 +161,38 @@ footer section {
     aspect-ratio: 1;
     background-color: var(--lightBG);
     height: 300px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mainAwards:hover + .awardCard {
-    transform: translate(-50%, -50%);
+.mainAwards .cardOne,
+.mainAwards .cardTwo,
+.mainAwards .cardThree,
+.mainAwards .cardFour
+ {
+    transition: all 0.25s ease-out;
+}
 
+.mainAwards:hover .cardOne {
+    transform: translate(-150%, -150%);
+}
+.mainAwards:hover .cardTwo {
+    transform: translate(150%, -150%);
+}
+.mainAwards:hover .cardThree {
+    transform: translate(-150%, 150%);
+}
+.mainAwards:hover .cardFour {
+    transform: translate(150%, 150%);
+}
+
+.img {
+    max-width: 100%;
+}
+
+
+.cardOne {
+    background-image: url(/images/cubeacabra-logo.png);
+    background-position: cover;
 }
