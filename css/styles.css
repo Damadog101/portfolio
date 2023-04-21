@@ -86,11 +86,7 @@ a {
     width: 100%;
 }
 
-.homeOpening {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .openingText {
     display: flex;
     flex-direction: column;
@@ -102,7 +98,12 @@ a {
     width: 50%;
 }
 
-
+.openingWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
 
 
 
