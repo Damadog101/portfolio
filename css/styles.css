@@ -86,6 +86,27 @@ a {
     width: 100%;
 }
 
+.homeOpening {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.openingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.openingText,
+.openingImage {
+    width: 50%;
+}
+
+
+
+
+
+
 .homeProjects {
     background-color: var(--dark);
     width: 100%;
@@ -144,9 +165,9 @@ footer section {
 
 .awardCard {
     aspect-ratio: 1;
-    background-color: var(--lightBG);
     height: 100px;
     position: absolute;
+    z-index: 0;
 }
 
 .awards {
@@ -157,6 +178,10 @@ footer section {
     height: 100vh;
 }
 
+.awards > .img {
+    z-index: inherit;
+}
+
 .mainAwards {
     aspect-ratio: 1;
     background-color: var(--lightBG);
@@ -164,6 +189,7 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .mainAwards .cardOne,
@@ -189,10 +215,6 @@ footer section {
 
 .img {
     max-width: 100%;
+    max-height: 100%;
 }
 
-
-.cardOne {
-    background-image: url(/images/cubeacabra-logo.png);
-    background-position: cover;
-}
