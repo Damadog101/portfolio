@@ -78,7 +78,7 @@ a {
 	text-decoration: none;
 }
 
-header {
+header.full {
 	height: 100vh;
 }
 
