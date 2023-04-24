@@ -256,3 +256,10 @@ footer section {
 .project > p {
 	background-color: rgb(37, 61, 66, 0.5);
 }
+
+.circle {
+	border-radius: 50%;
+	aspect-ratio: 1;
+	width: 300px;
+	background-color: green;
+}
