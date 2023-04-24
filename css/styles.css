@@ -1,221 +1,258 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: white;
 }
 
 body {
-    width: 100%;
-    min-height: 90vh;
-    background-color: var(--background);
+	width: 100%;
+	min-height: 90vh;
+	background-color: var(--background);
 }
 
 :root {
-    font-size: 32px;
-    --nav: #253D42;
-    --lightBG: #A7BDC2;
-    --bright: #2A9DA9;
-    --dark: #516165;
-    --bigDark: #394142;
-    --background: #7B8B8F;
+	font-size: 32px;
+	--nav: #253d42;
+	--lightBG: #a7bdc2;
+	--bright: #2a9da9;
+	--dark: #516165;
+	--bigDark: #394142;
+	--background: #7b8b8f;
 }
 
 nav,
 nav * {
-    background-color: var(--nav);
+	background-color: var(--nav);
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav section {
-    width: 50%;
+	width: 50%;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
+	list-style-type: none;
+	text-align: center;
 }
 
 nav li {
-    display: inline-block;
-    position: relative;
-    padding: 2%;
-
+	display: inline-block;
+	position: relative;
+	padding: 2%;
 }
 
-
 nav a {
-    display: block;
+	display: block;
 }
 
 .name {
-    padding: 1%;
+	padding: 1%;
 }
 
 .subNav li {
-    display: block;
-    margin: 2px 0px;
+	display: block;
+	margin: 2px 0px;
 }
 
 .subNav {
-    position: absolute;
-    z-index: 100;
-    display: none;
+	position: absolute;
+	z-index: 100;
+	display: none;
 }
 
 li:hover .subNav {
-    display: block;
+	display: block;
 }
 
-.navlist>li {
-    width: 25%;
+.navlist > li {
+	width: 25%;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+}
+
+header {
+	height: 100vh;
 }
 
 .homeOpening,
 .aboutOpening {
-    height: 100vh;
-    width: 100%;
+	width: 100%;
+	display: flex;
+	flex-grow: 1;
+	height: 100%;
 }
 
-
 .openingText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .openingText,
 .openingImage {
-    width: 50%;
+	width: 50%;
 }
 
 .openingWrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
 }
 
-
-
-
 .homeProjects {
-    background-color: var(--dark);
-    width: 100%;
-    height: 100vh;
+	background-color: var(--dark);
+	width: 100%;
+	min-height: 100vh;
 }
 
 .lightBG {
-    background-color: var(--lightBG);
+	background-color: var(--lightBG);
 }
 
 .darkBG {
-    background-color: var(--dark);
+	background-color: var(--dark);
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--nav);
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--nav);
 }
 
 footer section {
-    width: 33%;
-    background-color: var(--nav);
-
+	width: 33%;
+	background-color: var(--nav);
 }
 
 .aboutOpening {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
 }
 
 .aboutJumpWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
 }
 
-
 .aboutJump {
-    width: 20%;
-    height: 400px;
-    background-color: var(--lightBG);
-
+	width: 20%;
+	height: 400px;
+	background-color: var(--lightBG);
 }
 
 .awards,
 .hobbies,
 .future {
-    height: 100vh;
-    position: relative;
+	height: 100vh;
+	position: relative;
 }
 
 .awardCard {
-    aspect-ratio: 1;
-    height: 100px;
-    position: absolute;
-    z-index: 0;
+	aspect-ratio: 1;
+	height: 100px;
+	position: absolute;
+	z-index: 0;
 }
 
 .awards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .awards > .img {
-    z-index: inherit;
+	z-index: inherit;
 }
 
 .mainAwards {
-    aspect-ratio: 1;
-    background-color: var(--lightBG);
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+	aspect-ratio: 1;
+	background-color: var(--lightBG);
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
 }
 
 .mainAwards .cardOne,
 .mainAwards .cardTwo,
 .mainAwards .cardThree,
-.mainAwards .cardFour
- {
-    transition: all 0.25s ease-out;
+.mainAwards .cardFour {
+	transition: all 0.25s ease-out;
 }
 
 .mainAwards:hover .cardOne {
-    transform: translate(-150%, -150%);
+	transform: translate(-150%, -150%);
 }
 .mainAwards:hover .cardTwo {
-    transform: translate(150%, -150%);
+	transform: translate(150%, -150%);
 }
 .mainAwards:hover .cardThree {
-    transform: translate(-150%, 150%);
+	transform: translate(-150%, 150%);
 }
 .mainAwards:hover .cardFour {
-    transform: translate(150%, 150%);
+	transform: translate(150%, 150%);
 }
 
 .img {
-    max-width: 100%;
-    max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
+.openingImgWrapper {
+	height: 80vh;
+}
+
+.openingImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project {
+	width: 400px;
+	aspect-ratio: 2 / 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	border-radius: 12px;
+}
+
+#project1 {
+	background-image: url(/images/delvehomes.png);
+}
+#project2 {
+	background-image: url(/images/showcase.png);
+}
+#project3 {
+	background-image: url(/images/me.jpg);
+}
+#project4 {
+	background-image: url(/images/calculator.png);
+}
+#project5 {
+	background-image: url(/images/tictactoe.png);
+}
+
+.project > p {
+	background-color: rgb(37, 61, 66, 0.5);
+}
