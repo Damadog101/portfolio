@@ -79,7 +79,7 @@ a {
 }
 
 header.full {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .homeOpening,
@@ -94,6 +94,8 @@ header.full {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	width: 100%;
+	height: 100%;
 }
 
 .openingText,
@@ -163,7 +165,7 @@ footer section {
 	position: relative;
 }
 
-.awardCard {
+.hobbyCard {
 	aspect-ratio: 1;
 	height: 100px;
 	position: absolute;
@@ -182,7 +184,7 @@ footer section {
 	z-index: inherit;
 }
 
-.mainAwards {
+.mainHobbies {
 	aspect-ratio: 1;
 	background-color: var(--lightBG);
 	height: 300px;
@@ -192,23 +194,23 @@ footer section {
 	z-index: 2;
 }
 
-.mainAwards .cardOne,
-.mainAwards .cardTwo,
-.mainAwards .cardThree,
-.mainAwards .cardFour {
+.mainHobbies .cardOne,
+.mainHobbies .cardTwo,
+.mainHobbies .cardThree,
+.mainHobbies .cardFour {
 	transition: all 0.25s ease-out;
 }
 
-.mainAwards:hover .cardOne {
+.mainHobbies:hover .cardOne {
 	transform: translate(-150%, -150%);
 }
-.mainAwards:hover .cardTwo {
+.mainHobbies:hover .cardTwo {
 	transform: translate(150%, -150%);
 }
-.mainAwards:hover .cardThree {
+.mainHobbies:hover .cardThree {
 	transform: translate(-150%, 150%);
 }
-.mainAwards:hover .cardFour {
+.mainHobbies:hover .cardFour {
 	transform: translate(150%, 150%);
 }
 
@@ -250,6 +252,15 @@ footer section {
 	background-image: url(/images/calculator.png);
 }
 #project5 {
+	background-image: url(/images/tictactoe.png);
+}
+#awardOne {
+	background-image: url(/images/tictactoe.png);
+}
+#awardTwo {
+	background-image: url(/images/tictactoe.png);
+}
+#awardThree {
 	background-image: url(/images/tictactoe.png);
 }
 
