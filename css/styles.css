@@ -350,3 +350,22 @@ footer ul {
 .project:hover {
 	border: 4px solid var(--lightBG);
 }
+
+
+#trailer {
+	aspect-ratio: 1/1;
+	height: 20px;
+	background-color: rgb(108, 119, 172);
+	border-radius: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 500ms ease;
+}
+
+body:hover #trailer {
+	opacity:1;
+}
