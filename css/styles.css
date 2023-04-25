@@ -242,7 +242,9 @@ footer ul {
 }
 
 .openingImgWrapper {
-	height: 80vh;
+	height: 65vh;
+	padding: 0.3%;
+	border: 4px solid var(--dark);
 }
 
 .openingImage {
