@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	color: white;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -32,6 +33,20 @@ nav {
 	justify-content: space-between;
 	height: 100%;
 }
+
+.title {
+	width: 100%;
+	text-align: center;
+	padding: 1% 0%;
+	font-size: 1.2rem;
+}
+mark {
+	background-color: var(--lightBG);
+	padding: 0.4%;
+	border: 4px solid var(--bigDark);
+	border-radius: 8px;
+}
+
 
 nav section {
 	width: 50%;
@@ -111,7 +126,7 @@ header.full {
 .nameIntro {
 	width: 70%;
 	padding: 1%;
-	border: 3px solid var(--dark);
+	border: 3px solid var(--bigDark);
 	border-radius: 8px;
 	margin: 1% 0%;
 }
@@ -244,7 +259,7 @@ footer ul {
 .openingImgWrapper {
 	height: 65vh;
 	padding: 0.3%;
-	border: 4px solid var(--dark);
+	border: 4px solid var(--bigDark);
 }
 
 .openingImage {
@@ -261,7 +276,33 @@ footer ul {
 	align-items: center;
 	background-size: cover;
 	border-radius: 12px;
+	border: 4px solid var(--bigDark);
+	margin: 2%;
 }
+/* .emptyProject {
+	width: 400px;
+	aspect-ratio: 2 / 1;
+	margin: 0% 15%;
+	background-color: 2px solid lime;
+} */
+
+.projectWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/* .odd {
+	display: flex;
+	margin-left	: ;
+}
+.even {
+	display: flex;
+	flex-direction: flex-end;
+} */
+
+
+
 
 #project1 {
 	background-image: url(/images/delvehomes.png);
