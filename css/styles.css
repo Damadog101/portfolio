@@ -329,3 +329,24 @@ footer ul {
 .webProject {
 	min-height: 100vh;
 }
+
+.singleProjectWrap {
+	width: 100%;
+	display: flex;
+}
+.odd {
+	flex-direction: row;
+}
+.odd > div {
+	margin-left: 15%;
+}
+.even {
+	flex-direction: row-reverse;
+}
+.even > div {
+	margin-right: 15%;
+}
+
+.project:hover {
+	border: 4px solid var(--lightBG);
+}
