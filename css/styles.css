@@ -188,9 +188,8 @@ footer ul {
 }
 
 .awards,
-.hobbies,
-.future {
-	height: 100vh;
+.hobbies {
+	min-height: 100vh;
 	position: relative;
 }
 
@@ -203,10 +202,7 @@ footer ul {
 
 .awards {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
+	flex-wrap: wrap;
 }
 
 .awards > .img {
@@ -294,13 +290,13 @@ footer ul {
 	background-image: url(/images/tictactoe.png);
 }
 #awardOne {
-	background-image: url(/images/tictactoe.png);
+	background: linear-gradient(#e66465, #9198e5);
 }
 #awardTwo {
-	background-image: url(/images/tictactoe.png);
+	background: linear-gradient(#e66465, #9198e5);
 }
 #awardThree {
-	background-image: url(/images/tictactoe.png);
+	background: linear-gradient(#e66465, #9198e5);
 }
 
 .project > a {
@@ -369,4 +365,47 @@ body:hover .trailer {
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 500ms ease;
+}
+
+
+.aboutJump {
+	border: 4px solid var(--bigDark);
+	transition: border-radius 300ms;	
+}
+.aboutJump:hover {
+	border-radius: 10%;	
+}
+
+.aboutJump a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.lightBox {
+	background-color: var(--lightBG);
+	border: 4px solid var(--bigDark);
+	border-radius: 8px;
+	padding: 1%;
+}
+
+.future p {
+	width: 50%;
+	margin-bottom: 3%;
+}
+.future .title {
+	margin-top: 2%;
+}
+.futureText {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project p {
+	background-color: rgb(37, 61, 66, 0.5);
 }
