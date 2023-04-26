@@ -222,7 +222,10 @@ footer ul {
 .mainHobbies .cardOne,
 .mainHobbies .cardTwo,
 .mainHobbies .cardThree,
-.mainHobbies .cardFour {
+.mainHobbies .cardFour,
+.socialsWrapper .github,
+.socialsWrapper .email,
+.socialsWrapper .linkedin {
 	transition: all 0.25s ease-out;
 }
 
@@ -422,10 +425,11 @@ body:hover .trailer {
 }
 
 .socials {
-	aspect-ratio: 1;
-	height: 200px;
+	height: 150px;
+	width: 150px;
 	background-size: cover;
-	
+	position: absolute;
+	z-index: -1;
 }
 
 .linkedin {
@@ -436,4 +440,17 @@ body:hover .trailer {
 }
 .email {
 	background-image: url(/images/gmail.png);
+}
+
+.socialsWrapper:hover .github {
+	transform: translate(-100%, -100%);
+	z-index: 1;
+}
+.socialsWrapper:hover .linkedin {
+	transform: translate(100%, -100%);
+	z-index: 1;
+}
+.socialsWrapper:hover .email {
+	transform: translate(-100%, 100%);
+	z-index: 1;
 }
