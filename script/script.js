@@ -24,3 +24,20 @@ names.addEventListener("mouseover", () => {
 		iterations += 2 / 3;
 	}, 30);
 });
+
+let trailer1 = document.getElementById("trailer1");
+let bigTrailer1 = document.getElementById("bigTrailer1");
+
+window.onmousemove = (e) => {
+	const x = e.clientX,
+		y = e.clientY;
+	trailer1.style.transform = `translate(${x}px, ${y}px)`;
+
+	const keyframes = {
+		transform: `translate(${x}px, ${y}px)`,
+	};
+	trailer1.animate(keyframes, {
+		duration: 800,
+		fill: "forwards",
+	});
+};

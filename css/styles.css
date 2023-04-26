@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	color: white;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: "Times New Roman", Times, serif;
 }
 
 body {
@@ -46,7 +46,6 @@ mark {
 	border: 4px solid var(--bigDark);
 	border-radius: 8px;
 }
-
 
 nav section {
 	width: 50%;
@@ -108,8 +107,6 @@ header.full {
 	height: 100%;
 }
 
-
-
 .openingText {
 	display: flex;
 	flex-wrap: wrap;
@@ -130,8 +127,6 @@ header.full {
 	border-radius: 8px;
 	margin: 1% 0%;
 }
-
-
 
 .homeProjects {
 	background-color: var(--dark);
@@ -170,9 +165,6 @@ footer ul {
 .footer ul {
 	width: 50%;
 }
-
-
-
 
 .aboutOpening {
 	display: flex;
@@ -280,15 +272,11 @@ footer ul {
 	margin: 2%;
 }
 
-
 .projectWrapper {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 }
-
-
-
 
 #project1 {
 	background-image: url(/images/delvehomes.png);
@@ -351,11 +339,10 @@ footer ul {
 	border: 4px solid var(--lightBG);
 }
 
-
-#trailer {
+.trailer {
 	aspect-ratio: 1/1;
 	height: 20px;
-	background-color: rgb(108, 119, 172);
+	background-color: rgb(238, 200, 13);
 	border-radius: 20px;
 	position: fixed;
 	top: 0px;
@@ -366,6 +353,20 @@ footer ul {
 	transition: opacity 500ms ease;
 }
 
-body:hover #trailer {
-	opacity:1;
+body:hover .trailer {
+	opacity: 1;
+}
+
+.bigTrailer {
+	aspect-ratio: 1/1;
+	height: 20px;
+	background-color: green;
+	border-radius: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 500ms ease;
 }
