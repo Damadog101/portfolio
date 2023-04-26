@@ -8,7 +8,7 @@
 
 body {
 	width: 100%;
-	min-height: 90vh;
+	min-height: 100vh;
 	background-color: var(--background);
 }
 
@@ -422,6 +422,7 @@ body:hover .trailer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 7% 0%;
 }
 
 .socials {
@@ -442,15 +443,30 @@ body:hover .trailer {
 	background-image: url(/images/gmail.png);
 }
 
-.socialsWrapper:hover .github {
+.socialCircle:hover .github {
 	transform: translate(-100%, -100%);
 	z-index: 1;
 }
-.socialsWrapper:hover .linkedin {
+.socialCircle:hover .linkedin {
 	transform: translate(100%, -100%);
 	z-index: 1;
 }
-.socialsWrapper:hover .email {
+.socialCircle:hover .email {
 	transform: translate(-100%, 100%);
 	z-index: 1;
+}
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.contactText {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contactText p {
+	width: 50%;
+	margin-top: 3%;
 }
