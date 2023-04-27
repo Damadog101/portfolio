@@ -532,7 +532,7 @@ body:hover .bigTrailer {
 	justify-content: space-between;
 } 
 .portfolioWrapper {
-	height: 75vh;
+	min-height: 75vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
