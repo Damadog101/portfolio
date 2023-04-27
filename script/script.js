@@ -29,15 +29,20 @@ let trailer1 = document.getElementById("trailer1");
 let bigTrailer1 = document.getElementById("bigTrailer1");
 
 window.onmousemove = (e) => {
-	const x = e.clientX,
-		y = e.clientY;
+	const x = e.clientX - trailer1.clientWidth / 2,
+		y = e.clientY - trailer1.clientHeight / 2;
+	const a = e.clientX - bigTrailer1.clientWidth / 2,
+		b = e.clientY - bigTrailer1.clientHeight / 2;
+
 	trailer1.style.transform = `translate(${x}px, ${y}px)`;
+	bigTrailer1.style.transform = `translate(${a}px, ${b}px)`;
+
 
 	const keyframes = {
-		transform: `translate(${x}px, ${y}px)`,
+		transform: `translate(${a}px, ${b}px)`,
 	};
-	trailer1.animate(keyframes, {
-		duration: 800,
+	bigTrailer1.animate(keyframes, {
+		duration: 1000,
 		fill: "forwards",
 	});
 };

@@ -4,6 +4,7 @@
 	padding: 0;
 	color: white;
 	font-family: "Times New Roman", Times, serif;
+	cursor: none;
 }
 
 body {
@@ -209,6 +210,10 @@ footer ul {
 	z-index: inherit;
 }
 
+main {
+	min-height: 80vh;
+}
+
 .mainHobbies {
 	aspect-ratio: 1;
 	background-color: var(--lightBG);
@@ -342,37 +347,39 @@ footer ul {
 	border: 4px solid var(--lightBG);
 }
 
-.trailer {
+.trailer,
+.bigTrailer {
 	aspect-ratio: 1/1;
-	height: 20px;
-	background-color: rgb(238, 200, 13);
-	border-radius: 20px;
+	border-radius: 50%;
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	z-index: 1000;
 	pointer-events: none;
 	opacity: 0;
 	transition: opacity 500ms ease;
+
 }
 
-body:hover .trailer {
+.trailer {
+	height: 10px;
+	z-index: 1000;
+	background-color: var(--bigDark);
+	/* background: linear-gradient(to right, #426367, var(--bright)); */
+
+}
+
+body:hover .trailer,
+body:hover .bigTrailer {
 	opacity: 1;
 }
 
 .bigTrailer {
-	aspect-ratio: 1/1;
-	height: 20px;
-	background-color: green;
-	border-radius: 20px;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1000;
-	pointer-events: none;
-	opacity: 0;
-	transition: opacity 500ms ease;
+	background-color: transparent;
+	border: 1px solid var(--bigDark);
+	height: 23px;
+	z-index: 900;
 }
+
 
 
 .aboutJump {
@@ -442,6 +449,21 @@ body:hover .trailer {
 .email {
 	background-image: url(/images/gmail.png);
 }
+.webWork {
+	background-image: url(/images/layoutpractice.png);
+	background-size: cover;
+}
+.writeWork {
+	background-image: url(/images/layoutpractice.png);
+	background-size: cover;
+
+}
+.personalWork {
+	background-image: url(/images/cubeacabra-logo.png);
+	background-size: cover;
+
+}
+
 
 .socialCircle:hover .github {
 	transform: translate(-100%, -100%);
@@ -485,7 +507,28 @@ body:hover .trailer {
 	animation: background-pan 3s linear infinite;
 	background: linear-gradient(to right, var(--bright), #426367);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	white-space: nowrap;
 	background-size: 200%;
+}
+
+.miniNav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.portfolioNavSection {
+	width: 28%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+} 
+.portfolioWrapper {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
