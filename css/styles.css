@@ -4,8 +4,13 @@
 	padding: 0;
 	color: white;
 	font-family: "Times New Roman", Times, serif;
-	cursor: none;
 }
+
+.noCursor:hover {
+	cursor: none;
+
+}
+
 
 body {
 	width: 100%;

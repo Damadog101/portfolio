@@ -42,7 +42,7 @@ window.onmousemove = (e) => {
 		transform: `translate(${a}px, ${b}px)`,
 	};
 	bigTrailer1.animate(keyframes, {
-		duration: 1000,
+		duration: 800,
 		fill: "forwards",
 	});
 };
