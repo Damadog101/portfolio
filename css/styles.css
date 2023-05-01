@@ -573,14 +573,17 @@ body:hover .bigTrailer {
 	text-decoration: underline;
 }
 
-.webProject {
+.webProject,
+.writingProject {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 }
 .webImage,
-.webText {
+.webText,
+.writingText,
+.writingImage {
 	width: 48%;
 	font-size: 0.8rem;
 }
