@@ -254,13 +254,13 @@ main {
 }
 
 .cardOne {
-	background-image: url(/images/cubeacabra-logo.png);
+	background-image: url(/images/rubiksAbout.jpg);
 }
 .cardTwo {
-	background-image: url(/images/cubeacabra-logo.png);
+	background-image: url(/images/kendamaAbout.jpg);
 }
 .cardThree {
-	background-image: url(/images/cubeacabra-logo.png);
+	background-image: url(/images/fidgetSpinnerAbout.jpg);
 }
 .cardFour {
 	background-image: url(/images/cubeacabra-logo.png);
@@ -678,6 +678,11 @@ body:hover .bigTrailer {
 	align-items: center;
 }
 .project > h5 {
+	background-color: rgb(37, 61, 66, 0.5);
+	padding: 0% 1%;
+}
+
+.mainHobbies p {
 	background-color: rgb(37, 61, 66, 0.5);
 	padding: 0% 1%;
 }
