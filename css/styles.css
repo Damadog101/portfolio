@@ -266,7 +266,14 @@ main {
 .cardFour {
 	background-image: url(/images/cubeacabra-logo.png);
 }
-
+.writingImageOne {
+	background-image: url(/images/showcase.png);
+}
+.writingImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .card {
 	aspect-ratio: 1;
 	background-color: var(--lightBG);
