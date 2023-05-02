@@ -322,6 +322,9 @@ main {
 #awardThree {
 	background: linear-gradient(#e66465, #9198e5);
 }
+.youtubeImage {
+	background-image: url(/images/youtube.png);
+}
 
 .project > a {
 	background-color: rgb(37, 61, 66, 0.5);
@@ -479,6 +482,10 @@ body:hover .bigTrailer {
 	background-image: url(/images/cubeacabra-logo.png);
 	background-size: cover;
 }
+.mathImage {
+	background-image: url(/images/math.png);
+	background-size: cover;
+}
 
 .socialCircle:hover .github {
 	transform: translate(-100%, -100%);
@@ -574,16 +581,28 @@ body:hover .bigTrailer {
 }
 
 .webProject,
-.writingProject {
+.writingProject,
+.personalProject {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 }
+
+.personalProjectOne {
+	background-color: var(--dark);
+}
+
+.personalProject {
+	min-height: 50vh;
+}
+
 .webImage,
 .webText,
 .writingText,
-.writingImage {
+.writingImage,
+.personalWorkText,
+.personalWorkImage {
 	width: 48%;
 	font-size: 0.8rem;
 }
@@ -595,6 +614,36 @@ body:hover .bigTrailer {
 	height: 500px;
 	
 }
+
+.personalWorkText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.personalWorkImage {
+	height: 300px;
+	background-size: cover;
+}
+
+
 .webText p {
 	overflow-y: auto;
+}
+
+.personalWorkOpening {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 4% 0%;
+}
+.personalWorkOpening p {
+	width: 40%;
+}
+
+
+.personalWorkImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
