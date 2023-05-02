@@ -205,13 +205,6 @@ footer ul {
 	flex-wrap: wrap;
 }
 
-.hobbyCard {
-	aspect-ratio: 1;
-	height: 100px;
-	position: absolute;
-	z-index: 0;
-}
-
 .awards {
 	display: flex;
 	flex-wrap: wrap;
@@ -232,7 +225,6 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
 }
 
 .mainHobbies .cardOne,
@@ -247,15 +239,48 @@ main {
 
 .mainHobbies:hover .cardOne {
 	transform: translate(-150%, -150%);
+	z-index: 1;
 }
 .mainHobbies:hover .cardTwo {
-	transform: translate(150%, -150%);
+	transform: translate(-150%, 150%);
+	z-index: 1;
 }
 .mainHobbies:hover .cardThree {
-	transform: translate(-150%, 150%);
+	transform: translate(150%, -150%);
+	z-index: 1;
 }
 .mainHobbies:hover .cardFour {
 	transform: translate(150%, 150%);
+	z-index: 1;
+}
+
+.cardOne {
+	background-image: url(/images/cubeacabra-logo.png);
+}
+.cardTwo {
+	background-image: url(/images/cubeacabra-logo.png);
+}
+.cardThree {
+	background-image: url(/images/cubeacabra-logo.png);
+}
+.cardFour {
+	background-image: url(/images/cubeacabra-logo.png);
+}
+
+.card {
+	aspect-ratio: 1;
+	background-color: var(--lightBG);
+	border: 4px solid var(--bigDark);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+
+.hobbyCard {
+	height: 100px;
+	position: absolute;
+	z-index: -1;
 }
 
 .img {
@@ -593,8 +618,12 @@ body:hover .bigTrailer {
 	justify-content: center;
 	align-items: center;
 	height: 500px;
-	
 }
 .webText p {
 	overflow-y: auto;
+}
+
+.project > h5 {
+	background-color: rgb(37, 61, 66, 0.5);
+	padding: 0% 1%;
 }
