@@ -37,7 +37,6 @@ window.onmousemove = (e) => {
 	trailer1.style.transform = `translate(${x}px, ${y}px)`;
 	bigTrailer1.style.transform = `translate(${a}px, ${b}px)`;
 
-
 	const keyframes = {
 		transform: `translate(${a}px, ${b}px)`,
 	};
