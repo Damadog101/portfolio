@@ -254,21 +254,7 @@ main {
 	z-index: 1;
 }
 
-.cardOne {
-	background-image: url(/images/rubiksAbout.jpg);
-}
-.cardTwo {
-	background-image: url(/images/kendamaAbout.jpg);
-}
-.cardThree {
-	background-image: url(/images/fidgetSpinnerAbout.jpg);
-}
-.cardFour {
-	background-image: url(/images/juggleAbout.jpg);
-}
-.writingImageOne {
-	background-image: url(/images/showcase.png);
-}
+
 .writingImage {
 	display: flex;
 	justify-content: center;
@@ -345,6 +331,62 @@ main {
 .webImageFive {
 	background-image: url(/images/tictactoe.png);
 }
+.cardOne {
+	background-image: url(/images/rubiksAbout.jpg);
+}
+.cardTwo {
+	background-image: url(/images/kendamaAbout.jpg);
+}
+.cardThree {
+	background-image: url(/images/fidgetSpinnerAbout.jpg);
+}
+.cardFour {
+	background-image: url(/images/juggleAbout.jpg);
+}
+.cardFive {
+	background-image: url(/images/samusAbout.png);
+}
+.cardSix {
+	background-image: url(/images/marioAbout.png);
+}
+.cardSeven {
+	background-image: url(/images/minecraftAbout.png);
+}
+.cardEight {
+	background-image: url(/images/subnauticaAbout.png);
+}
+.writingImageOne {
+	background-image: url(/images/showcase.png);
+}
+.youtubeImage {
+	background-image: url(/images/youtube.png);
+}
+.linkedin {
+	background-image: url(/images/linkedin.png);
+}
+.github {
+	background-image: url(/images/github.png);
+}
+.email {
+	background-image: url(/images/gmail.png);
+}
+.webWork {
+	background-image: url(/images/layoutpractice.png);
+	background-size: cover;
+}
+.writeWork {
+	background-image: url(/images/layoutpractice.png);
+	background-size: cover;
+}
+.personalWork {
+	background-image: url(/images/cubeacabra-logo.png);
+	background-size: cover;
+}
+.mathImage {
+	background-image: url(/images/math.png);
+	background-size: cover;
+}
+
 #awardOne {
 	background: linear-gradient(#e66465, #9198e5);
 }
@@ -354,9 +396,7 @@ main {
 #awardThree {
 	background: linear-gradient(#e66465, #9198e5);
 }
-.youtubeImage {
-	background-image: url(/images/youtube.png);
-}
+
 
 .project > a {
 	background-color: rgb(37, 61, 66, 0.5);
@@ -493,31 +533,7 @@ body:hover .bigTrailer {
 	z-index: -1;
 }
 
-.linkedin {
-	background-image: url(/images/linkedin.png);
-}
-.github {
-	background-image: url(/images/github.png);
-}
-.email {
-	background-image: url(/images/gmail.png);
-}
-.webWork {
-	background-image: url(/images/layoutpractice.png);
-	background-size: cover;
-}
-.writeWork {
-	background-image: url(/images/layoutpractice.png);
-	background-size: cover;
-}
-.personalWork {
-	background-image: url(/images/cubeacabra-logo.png);
-	background-size: cover;
-}
-.mathImage {
-	background-image: url(/images/math.png);
-	background-size: cover;
-}
+
 
 .socialCircle:hover .github {
 	transform: translate(-100%, -100%);
