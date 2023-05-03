@@ -226,29 +226,30 @@ main {
 	align-items: center;
 }
 
-.mainHobbies .cardOne,
-.mainHobbies .cardTwo,
-.mainHobbies .cardThree,
-.mainHobbies .cardFour,
+.mainHobbies .subCard,
 .socialsWrapper .github,
 .socialsWrapper .email,
 .socialsWrapper .linkedin {
 	transition: all 0.25s ease-out;
 }
 
-.mainHobbies:hover .cardOne {
+.mainHobbies:hover .cardOne,
+.mainHobbies:hover .cardFive {
 	transform: translate(-150%, -150%);
 	z-index: 1;
 }
-.mainHobbies:hover .cardTwo {
+.mainHobbies:hover .cardTwo,
+.mainHobbies:hover .cardSix {
 	transform: translate(-150%, 150%);
 	z-index: 1;
 }
-.mainHobbies:hover .cardThree {
+.mainHobbies:hover .cardThree,
+.mainHobbies:hover .cardSeven {
 	transform: translate(150%, -150%);
 	z-index: 1;
 }
-.mainHobbies:hover .cardFour {
+.mainHobbies:hover .cardFour,
+.mainHobbies:hover .cardEight {
 	transform: translate(150%, 150%);
 	z-index: 1;
 }
@@ -263,7 +264,7 @@ main {
 	background-image: url(/images/fidgetSpinnerAbout.jpg);
 }
 .cardFour {
-	background-image: url(/images/cubeacabra-logo.png);
+	background-image: url(/images/juggleAbout.jpg);
 }
 .writingImageOne {
 	background-image: url(/images/showcase.png);
@@ -685,4 +686,15 @@ body:hover .bigTrailer {
 .mainHobbies p {
 	background-color: rgb(37, 61, 66, 0.5);
 	padding: 0% 1%;
+}
+
+.noDisplay {
+	display: none;
+}
+
+#awardOneText,
+#awardOneText,
+#awardOneText {
+	overflow: auto;
+	font-size: 2px;
 }

@@ -5,7 +5,6 @@ let bigTrailer = document.getElementById("bigTrailer");
 
 
 window.addEventListener("mousemove", (e) => {
-	console.log(e)
 	const x = e.clientX - trailer.clientWidth / 2,
 	y = e.clientY - trailer.clientHeight / 2;
 const a = e.clientX - bigTrailer.clientWidth / 2,
