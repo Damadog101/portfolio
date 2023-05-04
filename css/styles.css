@@ -94,11 +94,16 @@ a {
 	text-decoration: none;
 }
 
-header.full {
+header.fullFlex {
 	min-height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
 }
+header.full {
+	min-height: 100vh;
+
+}
+
 
 .homeOpening,
 .aboutOpening,
@@ -308,23 +313,28 @@ main {
 }
 
 #project1,
-.webImageOne {
+.webImageOne,
+.slide1 {
 	background-image: url(/images/delvehomes.png);
 }
 #project2,
-.webImageTwo {
+.webImageTwo,
+.slide2 {
 	background-image: url(/images/showcase.png);
 }
 #project3,
-.webImageThree {
+.webImageThree,
+.slide3 {
 	background-image: url(/images/layoutpractice.png);
 }
 #project4,
-.webImageFour {
+.webImageFour,
+.slide4 {
 	background-image: url(/images/calculator.png);
 }
 #project5,
-.webImageFive {
+.webImageFive,
+.slide5 {
 	background-image: url(/images/tictactoe.png);
 }
 .cardOne {
@@ -474,7 +484,8 @@ body:hover .bigTrailer {
 	border: 4px solid var(--bigDark);
 	transition: border-radius 300ms;
 }
-.aboutJump:hover {
+.aboutJump:hover,
+.slide:hover {
 	border-radius: 10%;
 }
 
@@ -726,4 +737,44 @@ body:hover .bigTrailer {
 .portfolioText {
 	font-size: 0.9rem;
 	margin: 3% 0;
+}
+.programmingOpening {
+	display: flex;
+	flex-wrap: wrap;
+}
+.webJumpWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.slide {
+	border: 4px solid var(--bigDark);
+	aspect-ratio: 1;
+	height: 300px;
+	margin: 0% 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--lightBG);
+	background-size: cover;
+	background-position: center;
+	transition: border-radius 300ms;
+}
+.slide:hover {
+	background-color: var(--lightBG);
+}
+
+
+
+.slide a {
+	background-color: rgb(37, 61, 66, 0.75);
+}
+
+a:hover  {
+	color: rgb(255, 255, 129);
 }
