@@ -148,6 +148,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	background-color: var(--nav);
+	font-size: 0.8rem;
 }
 
 footer section {
@@ -155,17 +156,15 @@ footer section {
 	background-color: var(--nav);
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
-footer ul {
+.noList {
 	list-style: none;
 }
 
 .footerNav {
 	display: flex;
 	justify-content: space-between;
-}
-.footer ul {
-	width: 50%;
 }
 
 .aboutOpening {
