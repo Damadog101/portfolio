@@ -778,3 +778,11 @@ body:hover .bigTrailer {
 a:hover  {
 	color: rgb(255, 255, 129);
 }
+
+.writeImg {
+	border: 4px solid var(--bigDark);
+}
+
+.writingProject {
+	margin: 3% 0%;
+}
