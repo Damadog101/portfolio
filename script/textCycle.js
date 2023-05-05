@@ -13,10 +13,29 @@ const textCycle = {
 
 
 
-names.addEventListener("mouseover", () => {
-	let iterations = 0;
-	let num = Math.ceil(Math.random() * 5);
+// names.addEventListener("mouseover", () => {
+	
+// });
 
+
+// function singleCycle() {
+	
+// }
+
+// let amogus;
+
+// amogus = setInterval(singleCycle(), 1000)
+
+let num = 1
+
+setInterval(() => {
+	let iterations = 0;
+
+	if (num < 5) {
+		num += 1
+	} else {
+		num = 1
+	}
 
 	const interval = setInterval(() => {
 		
@@ -31,11 +50,13 @@ names.addEventListener("mouseover", () => {
 			})
 			.join("");
 		if (iterations >= textCycle[num].length) {
-			console.log("text Cyle Lneght:")
-			console.log(textCycle[num].length)
 			clearInterval(interval);
 		}
 		// console.log(num)
-		iterations += 1;
+		iterations += 2 / 3;
 	}, 30);
-});
+}, 2700);
+
+
+
+
