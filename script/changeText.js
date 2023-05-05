@@ -41,7 +41,11 @@ hobbyOne.addEventListener("mouseleave", () => {
 hobbyTwo.addEventListener("mouseover", () => {
 	hobbyTwo.innerHTML =
 		"Like most people my age, I greatly enjoy video games. I am overall a Nintendo supporter, with my favorite series being the Mario and Metroid series, and my favorite game being Super Mario Galaxy 2. However, I have more recently been trying out some other kinds of games, and have come to greatly enjoy Subnautica, Just Dance, and Minecraft.";
-});
+		hobbyTwo.style.display = "block";
+
+	});
 hobbyTwo.addEventListener("mouseleave", () => {
 	hobbyTwo.innerHTML = "Gaming";
+	hobbyTwo.style.display = "flex";
+
 });
