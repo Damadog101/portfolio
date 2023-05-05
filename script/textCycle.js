@@ -8,37 +8,34 @@ const textCycle = {
 	2: "Edit Videos",
 	3: "Write Essays",
 	4: "Program With JavaScript",
-	5: "Wireframe with Figma",
-	6: "Markup with HTML and CSS"
+	5: "Wireframe with Figma"
 }
 
 
 
-
-
-
-
-
 names.addEventListener("mouseover", () => {
-	let original = names.innerText;
 	let iterations = 0;
+	let num = Math.ceil(Math.random() * 5);
+
 
 	const interval = setInterval(() => {
-		let num = Math.ceil(Math.random() * 7);
-
-		names.innerText = names.innerText
+		
+		names.innerText = textCycle[num]
 			.split("")
 			.map((letter, index) => {
 				if (index < iterations) {
+					
 					return textCycle[num][index];
 				}
 				return letters[Math.floor(Math.random() * 26)];
 			})
 			.join("");
-		if (iterations >= original.length) {
+		if (iterations >= textCycle[num].length) {
+			console.log("text Cyle Lneght:")
+			console.log(textCycle[num].length)
 			clearInterval(interval);
 		}
-
-		iterations += 2 / 3;
+		// console.log(num)
+		iterations += 1;
 	}, 30);
 });
