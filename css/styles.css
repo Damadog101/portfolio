@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Chivo+Mono:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Chivo+Mono:wght@500&display=swap");
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,11 +6,8 @@
 	color: white;
 	font-family: "Times New Roman", Times, serif;
 	cursor: none;
-	font-family: 'Abel', sans-serif;
-
+	font-family: "Abel", sans-serif;
 }
-
-
 
 body {
 	width: 100%;
@@ -106,9 +103,7 @@ header.fullFlex {
 }
 header.full {
 	min-height: 100vh;
-
 }
-
 
 .homeOpening,
 .aboutOpening,
@@ -407,7 +402,6 @@ main {
 #awardTwoBg {
 	background-image: url(/images/talentAward.jpg);
 	background-size: cover;
-
 }
 #awardThreeBg {
 	background-image: url(/images/rubiksAward.jpg);
@@ -498,8 +492,7 @@ body:hover .bigTrailer {
 	border: 4px solid var(--bigDark);
 	transition: border-radius 300ms;
 }
-.aboutJump:hover,
-.slide:hover {
+.aboutJump:hover {
 	border-radius: 10%;
 }
 
@@ -756,40 +749,12 @@ body:hover .bigTrailer {
 	display: flex;
 	flex-wrap: wrap;
 }
-.webJumpWrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 80vh;
-	position: relative;
-	flex-wrap: wrap;
-}
-
-.slide {
-	border: 4px solid var(--bigDark);
-	aspect-ratio: 1;
-	height: 300px;
-	margin: 0% 2%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--lightBG);
-	background-size: cover;
-	background-position: center;
-	transition: border-radius 300ms;
-}
-.slide:hover {
-	background-color: var(--lightBG);
-}
-
-
 
 .slide a {
 	background-color: rgb(37, 61, 66, 0.75);
 }
 
-a:hover  {
+a:hover {
 	color: rgb(255, 255, 129);
 }
 
@@ -802,9 +767,80 @@ a:hover  {
 }
 
 .webTitle {
-	margin: 1% 0% ;
+	margin: 1% 0%;
 }
 
 .award span {
-	background-color: rgb(37, 61, 66, 0.50);
+	background-color: rgb(37, 61, 66, 0.5);
+}
+
+.sliderWrapper {
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.slidesContainer {
+	height: calc(100vh - 10rem);
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 4px solid var(--bigDark);
+	transition: border-radius 100ms, border 100ms;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	flex: 1 0 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--lightBG);
+	background-size: cover;
+	background-position: center;
+	border: 0px;
+}
+
+.slidesContainer:hover {
+	border: 4px solid var(--lightBG);
+	border-radius: 18px;
+}
+
+.slideArrow {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 30%;
+	background-color: white;
+	border: none;
+	width: 2rem;
+	font-size: 3rem;
+	padding: 0;
+	opacity: 0.5;
+	transition: opacity 100ms;
+	color: black;
+}
+.slideArrow:hover,
+.slideArrow:focus {
+	opacity: 1;
+}
+#slideArrowBack {
+	left: 0;
+	padding-left: 0.25rem;
+	border-radius: 0 2rem 2rem 0;
+}
+#slideArrowNext {
+	right: 0;
+	padding-left: 0.75rem;
+	border-radius: 2rem 0 0 2rem;
 }
