@@ -305,12 +305,7 @@ main {
 	border-radius: 12px;
 	border: 4px solid var(--bigDark);
 	margin: 2%;
-}
-
-.projectWrapper {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+	position: relative;
 }
 
 #project1,
@@ -434,27 +429,6 @@ main {
 	width: 500px;
 	height: 500px;
 	background-size: cover;
-}
-
-.singleProjectWrap {
-	width: 100%;
-	display: flex;
-}
-.odd {
-	flex-direction: row;
-}
-.odd > div {
-	margin-left: 15%;
-}
-.even {
-	flex-direction: row-reverse;
-}
-.even > div {
-	margin-right: 15%;
-}
-
-.project:hover {
-	border: 4px solid var(--lightBG);
 }
 
 .trailer,
@@ -843,4 +817,63 @@ a:hover {
 	right: 0;
 	padding-left: 0.75rem;
 	border-radius: 2rem 0 0 2rem;
+}
+.singleProjectWrap {
+	width: 100%;
+	display: flex;
+}
+.odd {
+	flex-direction: row;
+}
+.odd > div {
+	margin-left: 15%;
+}
+.even {
+	flex-direction: row-reverse;
+}
+.even > div {
+	margin-right: 15%;
+}
+
+.project:hover {
+	border: 4px solid var(--lightBG);
+}
+
+.projectWrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	width: 100%;
+}
+
+.treeWrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.tree {
+	background-color: var(--bigDark);
+	height: 100%;
+	width: 4px;
+}
+.projectOdd::after {
+	content: "";
+	width: 300px;
+	border-top: 4px solid var(--bigDark);
+	position: absolute;
+	right: -302px;
+	top: 50%;
+	margin-top: 1px;
+}
+.projectEven::before {
+	content: "";
+	width: 265px;
+	border-top: 4px solid var(--bigDark);
+	position: absolute;
+	right: 445px;
+	top: 50%;
+	margin-top: 1px;
 }
