@@ -861,16 +861,16 @@ a:hover {
 }
 .projectOdd::after {
 	content: "";
-	width: 500px;
+	width: 530px;
 	border-top: 4px solid var(--bigDark);
 	position: absolute;
-	right: -500px;
+	right: -530px;
 	top: 50%;
 	margin-top: 1px;
 }
 .projectEven::before {
 	content: "";
-	width: 335px;
+	width: 345px;
 	border-top: 4px solid var(--bigDark);
 	position: absolute;
 	right: 445px;
@@ -878,27 +878,35 @@ a:hover {
 	margin-top: 1px;
 }
 
+
+@media screen and (max-width: 1920px) {
+	.projectOdd::after {
+		width: 500px;
+		right: -500px;
+	}
+	.projectEven::before {
+		right: 445px;
+		width: 335px;	
+}
+}
+
 @media screen and (max-width: 1536px) {
 	.projectOdd::after {
 		width: 305px;
 		right: -305px;
-		top: 50%;
 	}
 	.projectEven::before {
 		right: 445px;
 		top: 50%;
-		width: 265px;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.projectOdd::after {
 		right: -302px;
-		top: 50%;
 	}
 	.projectEven::before {
 		right: 445px;
-		top: 50%;
 	}
 
 	.project {
