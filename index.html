@@ -1,117 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home - Ethan McFadden Portfolio</title>
-		<link rel="stylesheet" href="/css/styles.css" />
-		<script src="/script/script.js" defer></script>
-		<script src="/script/textCycle.js" defer></script>
-		<link rel="icon" href="/images/cubeacabra-logo.png" />
-	</head>
-	<body>
-		<header class="fullFlex">
-			<nav>
-				<section class="name">
-					<a href="/index.html">Ethan McFadden</a>
-				</section>
-				<section class="links">
-					<ul class="navList">
-						<li><a href="/about.html">About</a></li>
-						<li>
-							<a class="dropdown" href="/portfolio.html">My Work &#x25BE;</a>
-							<ul class="subNav">
-								<li><a href="/programming.html">Web</a></li>
-								<li><a href="/writing.html">Writing</a></li>
-								<li><a href="/personal.html">Personal Work</a></li>
-							</ul>
-						</li>
-						<li><a href="/resume.html">Resume</a></li>
-						<li><a href="/contact.html">Contact</a></li>
-					</ul>
-				</section>
-			</nav>
-			<section class="homeOpening">
-				<section class="openingText">
-					<p class="lightBG nameIntro">
-						Hi, I'm Ethan. I <span id="name">Develop Websites</span>
-					</p>
-					<p class="lightBG introSummary">
-						I am a student at Clovis East High School, as well as the Center for
-						Advanced Research and Technology. I enjoy programming websites, as
-						well as working hard to expand my skill set and produce the best
-						quality work I can.
-					</p>
-				</section>
-				<section class="openingImage">
-					<div class="lightBG ImgWrapper">
-						<img class="img" src="/images/photo.jpg" alt="" />
-					</div>
-				</section>
-			</section>
-		</header>
-		<main>
-			<section class="homeProjects">
-				<h2 class="title"><mark>My Projects</mark></h2>
-				<div class="projectWrapper">
-					<div class="project projectOdd" id="project1">
-						<a href="/programming.html#webProjectOne">DelveHomes Project</a>
-					</div>
-					<div class="treeWrap"><div class="tree"></div></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Ethan McFadden Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/script/script.js" defer></script>
+    <script src="/script/textCycle.js" defer></script>
+    <script src="/script/tree.js"></script>
+    <link rel="icon" href="/images/cubeacabra-logo.png" />
+  </head>
+  <body>
+    <header class="fullFlex">
+      <nav>
+        <section class="name">
+          <a href="/index.html">Ethan McFadden</a>
+        </section>
+        <section class="links">
+          <ul class="navList">
+            <li><a href="/about.html">About</a></li>
+            <li>
+              <a class="dropdown" href="/portfolio.html">My Work &#x25BE;</a>
+              <ul class="subNav">
+                <li><a href="/programming.html">Web</a></li>
+                <li><a href="/writing.html">Writing</a></li>
+                <li><a href="/personal.html">Personal Work</a></li>
+              </ul>
+            </li>
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+      <section class="homeOpening">
+        <section class="openingText">
+          <p class="lightBG nameIntro">
+            Hi, I'm Ethan. I <span id="name">Develop Websites</span>
+          </p>
+          <p class="lightBG introSummary">
+            I am a student at Clovis East High School, as well as the Center for
+            Advanced Research and Technology. I enjoy programming websites, as
+            well as working hard to expand my skill set and produce the best
+            quality work I can.
+          </p>
+        </section>
+        <section class="openingImage">
+          <div class="lightBG ImgWrapper">
+            <img class="img" src="/images/photo.jpg" alt="" />
+          </div>
+        </section>
+      </section>
+    </header>
+    <main>
+      <section class="homeProjects">
+        <h2 class="title"><mark>My Projects</mark></h2>
+        <div class="projectWrapper">
+          <div class="project projectOdd" id="project1">
+            <a href="/programming.html#webProjectOne">DelveHomes Project</a>
+            <div class="branchLeft"></div>
+          </div>
+          <div class="treeWrap"><div class="tree" id="treeBase"></div></div>
 
-					<div class="empty"></div>
+          <div class="empty"></div>
 
-					<div class="empty"></div>
-					<div class="treeWrap"><div class="tree"></div></div>
-					<div class="project projectEven" id="project2">
-						<a href="/programming.html#webProjectTwo">Showcase Project</a>
-					</div>
-					<div class="project projectOdd" id="project3">
-						<a href="/programming.html#webProjectThree">Layout Practice</a>
-					</div>
-					<div class="treeWrap"><div class="tree"></div></div>
-					<div class="empty"></div>
-					<div class="empty"></div>
-					<div class="treeWrap"><div class="tree"></div></div>
-					<div class="project projectEven" id="project4">
-						<a href="/programming.html#webProjectFour">Budget Calculator</a>
-					</div>
+          <div class="empty"></div>
+          <div class="treeWrap"><div class="tree"></div></div>
+          <div class="project projectEven" id="project2">
+            <a href="/programming.html#webProjectTwo">Showcase Project</a>
+            <div class="branchRight"></div>
+          </div>
+          <div class="project projectOdd" id="project3">
+            <a href="/programming.html#webProjectThree">Layout Practice</a>
+            <div class="branchLeft"></div>
+          </div>
+          <div class="treeWrap"><div class="tree"></div></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="treeWrap"><div class="tree"></div></div>
+          <div class="project projectEven" id="project4">
+            <a href="/programming.html#webProjectFour">Budget Calculator</a>
+            <div class="branchRight"></div>
+          </div>
 
-					<div class="project projectOdd" id="project5">
-						<a href="/programming.html#webProjectFive">Tic-Tac-Toe 2.0</a>
-					</div>
-					<div class="treeWrap">
-						<div class="tree"></div>
-					</div>
-				</div>
-			</section>
-			<section class="mouseTrailer">
-				<div class="trailer" id="trailer"></div>
-				<div class="bigTrailer" id="bigTrailer"></div>
-			</section>
-		</main>
-		<footer>
-			<section>
-				<ul>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/portfolio.html">My Work</a></li>
-					<li><a href="/resume.html">Resume</a></li>
-					<li><a href="/contact.html">Contact</a></li>
-				</ul>
-			</section>
-			<section>Ethan McFadden &copy;</section>
-			<section>
-				<ul class="noList">
-					<li>
-						<a href="https://www.linkedin.com/in/ethan-mcfadden-697377275/"
-							>LinkedIn</a
-						>
-					</li>
-					<li><a href="https://github.com/" target="_blank">Github</a></li>
-					<li><a href="mailto:ethan.mcfadden@student.cart.org">Email</a></li>
-				</ul>
-			</section>
-		</footer>
-	</body>
+          <div class="project projectOdd" id="project5">
+            <a href="/programming.html#webProjectFive">Tic-Tac-Toe 2.0</a>
+            <div class="branchLeft"></div>
+          </div>
+          <div class="treeWrap">
+            <div class="tree"></div>
+          </div>
+        </div>
+      </section>
+      <section class="mouseTrailer">
+        <div class="trailer" id="trailer"></div>
+        <div class="bigTrailer" id="bigTrailer"></div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/portfolio.html">My Work</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>Ethan McFadden &copy;</section>
+      <section>
+        <ul class="noList">
+          <li>
+            <a href="https://www.linkedin.com/in/ethan-mcfadden-697377275/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/" target="_blank">Github</a></li>
+          <li><a href="mailto:ethan.mcfadden@student.cart.org">Email</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
