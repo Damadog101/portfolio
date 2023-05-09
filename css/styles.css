@@ -880,9 +880,9 @@ a:hover {
 
 @media screen and (max-width: 1536px) {
 	.projectOdd::after {
-		right: -302px;
+		width: 305px;
+		right: -305px;
 		top: 50%;
-		width: 265px;
 	}
 	.projectEven::before {
 		right: 445px;
