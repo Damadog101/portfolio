@@ -909,7 +909,7 @@ a:hover {
 }
 #row1empty1 {
 	border-right: 2px solid var(--bigDark);
-	border-bottom: 2px solid var(--bigDark);
+	
 	grid-row: 1/2;
 	grid-column: 4/5;
 }
