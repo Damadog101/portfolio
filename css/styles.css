@@ -818,10 +818,7 @@ a:hover {
 	padding-left: 0.75rem;
 	border-radius: 2rem 0 0 2rem;
 }
-.singleProjectWrap {
-	width: 100%;
-	display: flex;
-}
+
 .odd {
 	flex-direction: row;
 }
@@ -839,13 +836,6 @@ a:hover {
 	border: 4px solid var(--lightBG);
 }
 
-.projectWrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	width: 100%;
-}
-
 .treeWrap {
 	display: flex;
 	justify-content: center;
@@ -858,8 +848,10 @@ a:hover {
 	background-color: var(--bigDark);
 	height: 100%;
 	width: 4px;
+	/* position: absolute; */
+
 }
-.branchLeft {
+/* .branchLeft {
 	content: "";
 	width: 555px;
 	border-top: 4px solid var(--bigDark);
@@ -877,7 +869,65 @@ a:hover {
 	right: 445px;
 	top: 50%;
 	margin-top: 1px;
+} */
+
+
+
+.projectWrapper {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(8, 12.5%);
+	grid-template-rows: repeat(10, 10%);
 }
+
+
+/* .empty,
+.treeWrap {
+	width: 450px;
+	aspect-ratio: 2 / 1;
+	margin: 0% 2%;
+} */
+
+
+
+#project1 {
+	grid-row: 1/3;
+	grid-column: 1/4;
+}
+#project2 {
+	grid-row: 3/5;
+	grid-column: 6/9;
+}#project3 {
+	grid-row: 5/7;
+	grid-column: 1/4;
+}#project4 {
+	grid-row: 7/9;
+	grid-column: 6/9;
+}#project5 {
+	grid-row: 9/11;
+	grid-column: 1/4;
+}
+#row1empty1 {
+	border-right: 2px solid var(--bigDark);
+	border-bottom: 2px solid var(--bigDark);
+	grid-row: 1/2;
+	grid-column: 4/5;
+}
+#row1empty2 {
+	border-left: 2px solid var(--bigDark);
+	grid-row: 1/3;
+	grid-column: 5/6;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1920px) {
