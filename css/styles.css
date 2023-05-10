@@ -932,10 +932,10 @@ a:hover {
 }
 
 
-rowTop {
+.rowTop {
 	border-bottom: 2px solid var(--bigDark);
 }
-rowBottom {
+.rowBottom {
 	border-top: 2px solid var(--bigDark);
 }
 
