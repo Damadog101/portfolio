@@ -189,7 +189,7 @@ footer section {
 }
 
 .aboutJump {
-	width: 20%;
+	aspect-ratio: 1;	
 	height: 400px;
 	background-color: var(--lightBG);
 }
@@ -1069,41 +1069,40 @@ a:hover {
 	background-color: rgb(37, 61, 66, 0.5);
 }
 
-
-
-
-@media screen and (max-width: 1920px) {
-	.projectOdd::after {
-		width: 500px;
-		right: -500px;
-	}
-	.projectEven::before {
-		right: 445px;
-		width: 335px;	
-}
+.singleProjectWrap {
+	width: 100%;
+	display: flex;
 }
 
-@media screen and (max-width: 1536px) {
-	.projectOdd::after {
-		width: 305px;
-		right: -305px;
-	}
-	.projectEven::before {
-		right: 445px;
-		top: 50%;
-	}
-}
 
-@media screen and (max-width: 480px) {
-	.projectOdd::after {
-		right: -302px;
+
+@media screen and (max-width: 500px) {
+	.openingText,
+	.openingImage {
+		width: 100%;
 	}
-	.projectEven::before {
-		right: 445px;
+	.homeOpening {
+		flex-wrap: wrap;
+	}
+	.introSummary,
+	.nameIntro {
+	width: 90%;
+	padding: 1%;
+	margin: 2% 2%;
+	}
+	#name {
+		display: block;
+		width: 100%;
+	}
+	.ImgWrapper {
+		height: 65vh;
+		padding: 0.3%;
+		margin: 2% 2%;
+
+		border: 4px solid var(--bigDark);
 	}
 
-	.project {
-		width: 150px;
-		font-size: 0.7rem;
-	}
+
+
+
 }
