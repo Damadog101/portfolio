@@ -1128,5 +1128,7 @@ a:hover {
 	.resumeButton a {
 		font-size: 0.8rem;
 	}
-
+	.contactText p {
+		width: 90%;
+	}
 }
