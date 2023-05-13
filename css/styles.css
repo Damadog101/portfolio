@@ -1162,4 +1162,8 @@ a:hover {
 	.mainHobbies:hover .cardEight {
 		transform: translate(170%, 170%);
 	}
+	.socials {
+		height: 125px;
+		width: 125px;
+	}
 }
