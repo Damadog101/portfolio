@@ -1166,4 +1166,7 @@ a:hover {
 		height: 125px;
 		width: 125px;
 	}
+	.hobbyCard {
+		height: 90px;
+	}
 }
