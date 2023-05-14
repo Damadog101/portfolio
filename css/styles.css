@@ -88,6 +88,20 @@ li:hover .subNav {
 	display: block;
 }
 
+#hamburger {
+	position: relative;
+}
+
+#hamburger:hover ~ #mobileLinks {
+	display: block;
+}
+
+#mobileLinks {
+	position: absolute;
+	top: 48px;
+	right: 0px;
+}
+
 .navlist > li {
 	width: 25%;
 }
@@ -1060,7 +1074,7 @@ a:hover {
 	display: flex;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 	.openingText,
 	.openingImage {
 		width: 100%;
@@ -1223,5 +1237,13 @@ a:hover {
 		justify-content: center;
 		align-items: center;
 		height: 60vh;
+	}
+}
+@media screen and (max-width: 500px) {
+	.mobileLayout {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 1%;
+		margin: 3% 3% 0% 0%;
 	}
 }
