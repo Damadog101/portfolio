@@ -1,7 +1,6 @@
 let mobile = document.getElementById("mobileLayout");
 let normal = document.getElementById("normalLayout");
 let hamburger = document.getElementById("hamburger");
-let links = document.getElementById("mobileLinks");
 
 function showHamburger() {
 	let width = window.innerWidth;
@@ -19,10 +18,9 @@ function showHamburger() {
 		normal.classList.add("noDisplay");
 	}
 }
-
-window.addEventListener("resize", () => {
+window.addEventListener("load", () => {
 	showHamburger();
 });
-window.addEventListener("load", () => {
+window.addEventListener("resize", () => {
 	showHamburger();
 });
