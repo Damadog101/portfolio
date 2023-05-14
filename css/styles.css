@@ -104,6 +104,9 @@ header.fullFlex {
 header.full {
 	min-height: 100vh;
 }
+.programHeader {
+	min-height: 100vh;
+}
 
 .homeOpening,
 .aboutOpening,
@@ -1119,9 +1122,6 @@ a:hover {
 
 	.project {
 		height: 350px;
-		/* border-radius: 12px;
-		border: 4px solid var(--bigDark);
-		margin: 2%; */
 		overflow: auto;
 	}
 
@@ -1168,5 +1168,54 @@ a:hover {
 	}
 	.hobbyCard {
 		height: 90px;
+	}
+	.trailer,
+	.bigTrailer {
+		display: none;
+	}
+	.slidesContainer {
+		height: calc(100vh - 20rem);
+	}
+	/* .programHeader {
+		height: 20vh;
+	} */
+	.webText,
+	.webImage,
+	.personalWorkOpening p,
+	.writingText,
+	.writingImage,
+	.personalWorkImage,
+	.personalWorkText {
+		width: 90%;
+	}
+	.webText,
+	.writingText,
+	.writingImage,
+	.personalWorkImage,
+	.personalWorkText {
+		margin: 2%;
+	}
+	.webImageTwo,
+	.webImageFour,
+	.writingImageTwo,
+	.mathImage {
+		order: -1;
+	}
+	.mathImage {
+		background-position: -100px;
+	}
+	.writingProjectTwo {
+		background-color: var(--dark);
+	}
+	.webImageThree,
+	.webImageFive {
+		background-position: center;
+	}
+	.webImageOne {
+		background-position: -50px;
+	}
+
+	.portfolioNavSection {
+		width: 90%;
 	}
 }
