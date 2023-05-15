@@ -31,6 +31,7 @@ hamburger.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
 	showHamburger();
+	links.classList.add("noDisplay")
 });
 window.addEventListener("resize", () => {
 	showHamburger();
