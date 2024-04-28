@@ -92,8 +92,6 @@ li:hover .subNav {
 	position: relative;
 }
 
-
-
 #mobileLinks a {
 	padding: 3% 0%;
 	display: flex;
@@ -390,7 +388,6 @@ main {
 }
 .youtubeImage {
 	background-image: url(/images/youtube.png);
-
 }
 .linkedin {
 	background-image: url(/images/linkedin.png);
@@ -435,7 +432,21 @@ main {
 	background-image: url(/images/rubiksAward.jpg);
 	background-size: cover;
 	background-position: center;
+}
 
+.gameImageOne,
+.gameSlide1 {
+	background-image: url(/images/holly.png);
+}
+
+.gameImageTwo,
+.gameSlide2 {
+	background-image: url(/images/holly.png);
+}
+
+.gameImageThree,
+.gameSlide3 {
+	background-image: url(/images/holly.png);
 }
 
 .project > a {
@@ -453,11 +464,13 @@ main {
 	align-items: center;
 }
 
-.webProject {
+.webProject,
+.gameProject {
 	min-height: 80vh;
 }
 
-.webImage {
+.webImage,
+.gameImage {
 	width: 500px;
 	height: 500px;
 	background-size: cover;
@@ -649,6 +662,7 @@ body:hover .bigTrailer {
 }
 
 .webProject,
+.gameProject,
 .writingProject,
 .personalProject {
 	display: flex;
@@ -670,11 +684,14 @@ body:hover .bigTrailer {
 .writingText,
 .writingImage,
 .personalWorkText,
-.personalWorkImage {
+.personalWorkImage,
+.gameImage,
+.gameText {
 	width: 48%;
 	font-size: 0.8rem;
 }
-.webText {
+.webText,
+.gameText {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -693,7 +710,8 @@ body:hover .bigTrailer {
 	background-size: cover;
 }
 
-.webText p {
+.webText p,
+.gameText p {
 	overflow-y: auto;
 }
 
@@ -891,8 +909,6 @@ a:hover {
 	grid-template-columns: repeat(8, 12.5%);
 	grid-template-rows: repeat(10, 10%);
 }
-
-
 
 #project1 {
 	grid-row: 1/3;
@@ -1186,6 +1202,8 @@ a:hover {
 
 	.webText,
 	.webImage,
+	.gameImage,
+	.gameText,
 	.personalWorkOpening p,
 	.writingText,
 	.writingImage,
@@ -1203,7 +1221,8 @@ a:hover {
 	.webImageTwo,
 	.webImageFour,
 	.writingImageTwo,
-	.mathImage {
+	.mathImage,
+	.gameImageTwo {
 		order: -1;
 	}
 	.mathImage {
@@ -1213,10 +1232,12 @@ a:hover {
 		background-color: var(--dark);
 	}
 	.webImageThree,
-	.webImageFive {
+	.webImageFive,
+	.gameImageThree {
 		background-position: center;
 	}
-	.webImageOne {
+	.webImageOne,
+	.gameImageOne {
 		background-position: -50px;
 	}
 
