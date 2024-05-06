@@ -12,12 +12,13 @@
 		></script>
 
 		<script src="/script/script.js" defer></script>
-		<script src="/script/textCycle.js" defer></script>
 		<script src="/script/hamburger.js" defer></script>
+		<script src="/script/gameSlider.js" defer></script>
+
 		<link rel="icon" href="/images/cubeacabra-logo.png" />
 	</head>
 	<body>
-		<header class="fullFlex">
+		<header class="gameHeader">
 			<nav>
 				<section class="name">
 					<a href="/index.html">Ethan McFadden</a>
@@ -52,11 +53,37 @@
 					</div>
 				</section>
 			</nav>
+
+			<h2 class="title gameTitle"><mark>Jump to Project</mark></h2>
+
+			<div class="gameSlider">
+				<section class="gameSliderWrapper">
+					<button class="gameSlideArrow" id="gameSlideArrowBack">
+						&#8249;
+					</button>
+
+					<button class="gameSlideArrow" id="gameSlideArrowNext">
+						&#8250;
+					</button>
+
+					<ul class="gameSlidesContainer" id="gameSlidesContainer">
+						<li class="gameSlide gameSlide1">
+							<a href="#gameProjectOne">SMBX</a>
+						</li>
+						<li class="gameSlide gameSlide2">
+							<a href="#gameProjectTwo">CodeName: Holly</a>
+						</li>
+						<li class="gameSlide gameSlide3">
+							<a href="#gameProjectThree">Beowulf's Inertia</a>
+						</li>
+					</ul>
+				</section>
+			</div>
 		</header>
 		<main>
 			<section class="darkBG gameProject gameProjectOne" id="gameProjectOne">
-				<div class="webImageOne gameImage ImgWrapper"></div>
-				<div class="webText">
+				<div class="gameImageOne gameImage ImgWrapper"></div>
+				<div class="gameText">
 					<p class="lightBox">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
 						similique, soluta neque eius ipsum, pariatur quis, delectus aliquam

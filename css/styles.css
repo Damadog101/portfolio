@@ -126,7 +126,8 @@ header.fullFlex {
 header.full {
 	min-height: 100vh;
 }
-.programHeader {
+.programHeader,
+.gameHeader {
 	min-height: 100vh;
 }
 
@@ -436,7 +437,7 @@ main {
 
 .gameImageOne,
 .gameSlide1 {
-	background-image: url(/images/holly.png);
+	background-image: url(/images/smbx.png);
 }
 
 .gameImageTwo,
@@ -446,7 +447,7 @@ main {
 
 .gameImageThree,
 .gameSlide3 {
-	background-image: url(/images/holly.png);
+	background-image: url(/images/beowulf.png);
 }
 
 .project > a {
@@ -777,7 +778,8 @@ body:hover .bigTrailer {
 	flex-wrap: wrap;
 }
 
-.slide a {
+.slide a,
+.gameSlide a {
 	background-color: rgb(37, 61, 66, 0.75);
 }
 
@@ -793,7 +795,8 @@ a:hover {
 	margin: 3% 0%;
 }
 
-.webTitle {
+.webTitle,
+.gameTitle {
 	margin: 1% 0%;
 }
 
@@ -801,13 +804,15 @@ a:hover {
 	background-color: rgb(37, 61, 66, 0.5);
 }
 
-.sliderWrapper {
+.sliderWrapper,
+.gameSliderWrapper {
 	margin: 1rem;
 	position: relative;
 	overflow: hidden;
 }
 
-.slidesContainer {
+.slidesContainer,
+.gameSlidesContainer {
 	height: calc(100vh - 10rem);
 	width: 100%;
 	display: flex;
@@ -820,7 +825,8 @@ a:hover {
 	transition: border-radius 100ms, border 100ms;
 }
 
-.slide {
+.slide,
+.gameSlide {
 	width: 100%;
 	height: 100%;
 	flex: 1 0 100%;
@@ -834,12 +840,14 @@ a:hover {
 	border: 0px;
 }
 
-.slidesContainer:hover {
+.slidesContainer:hover,
+.gameSlidesContainer:hover {
 	border: 4px solid var(--lightBG);
 	border-radius: 18px;
 }
 
-.slideArrow {
+.slideArrow,
+.gameSlideArrow {
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -858,15 +866,19 @@ a:hover {
 	color: black;
 }
 .slideArrow:hover,
-.slideArrow:focus {
+.slideArrow:focus,
+.gameSlideArrow:hover,
+.gameSlideArrow:focus {
 	opacity: 1;
 }
-#slideArrowBack {
+#slideArrowBack,
+#gameSlideArrowBack {
 	left: 0;
 	padding-left: 0.25rem;
 	border-radius: 0 2rem 2rem 0;
 }
-#slideArrowNext {
+#slideArrowNext,
+#gameSlideArrowNext {
 	right: 0;
 	padding-left: 0.75rem;
 	border-radius: 2rem 0 0 2rem;
@@ -1196,7 +1208,8 @@ a:hover {
 	.bigTrailer {
 		display: none;
 	}
-	.slidesContainer {
+	.slidesContainer,
+	.gameSlidesContainer {
 		height: calc(100vh - 20rem);
 	}
 
@@ -1244,7 +1257,8 @@ a:hover {
 	.portfolioNavSection {
 		width: 90%;
 	}
-	.slider {
+	.slider,
+	.gameSlider {
 		display: flex;
 		justify-content: center;
 		align-items: center;
